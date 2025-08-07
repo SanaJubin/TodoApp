@@ -1,0 +1,183 @@
+ body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #e2d6e3ff 10%, #ecd5e8ff 100%);
+      }
+      .sticky.head {
+        margin: 20px;
+        font-size: 3rem;
+        padding: 10px;
+      }
+      .layout {
+        display: flex;
+        height: 100vh;
+      }
+
+      .sidebar {
+        width: 260px;
+        background: white;
+        border-right: 1px solid #ddd;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .sidebar h2 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      .search-input {
+        padding: 0.5rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        width: 100%;
+      }
+
+      .section h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .section ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .section ul li {
+        padding: 0.3rem 0;
+        cursor: pointer;
+      }
+
+      .section ul li strong {
+        color: #0c04b1ff;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .tag {
+        background: #e0e0e0;
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+      }
+
+      .tag.add {
+        background: #d0d0ff;
+        cursor: pointer;
+      }
+
+      .footer-links {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .footer-links a {
+        color: #333;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .main-content {
+        flex: 1;
+        padding: 2rem;
+        overflow-x: auto;
+      }
+
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.5rem;
+        margin-top: 0 1rem;
+      }
+
+      .card {
+        border-radius: 12px;
+        background: #fff8b3;
+        box-shadow: 0 4px 24px rgba(79, 70, 229, 0.08);
+        padding: 1.5rem;
+        transition: transform 0.2s;
+      }
+
+      .card:nth-child(4n + 1) {
+        background: #fff8b3;
+      }
+      .card:nth-child(4n + 2) {
+        background: #c3f0ff;
+      }
+      .card:nth-child(4n + 3) {
+        background: #ffd6d6;
+      }
+      .card:nth-child(4n + 4) {
+        background: #ffdfc1;
+      }
+
+      .card:hover {
+        transform: scale(1.03);
+      }
+
+      .card h2 {
+        margin-top: 0;
+        font-size: 1.1rem;
+      }
+
+      .card ul {
+        padding-left: 1.2rem;
+        margin: 0.5rem 0;
+      }
+
+      .card ul li {
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+
+      .delete,
+      .complete {
+        display: inline-block;
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+        padding: 0.4rem 0.8rem;
+        background: #f2f2f2;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+        font-size: 0.85rem;
+      }
+
+      .add-card {
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: #777;
+      border-radius: 16px;
+      height: 234px;
+    }
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem;
+}
+.card {
+  background: #fff8b3;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+#add-sticky-form{
+  
+
+}
